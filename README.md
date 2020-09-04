@@ -34,22 +34,42 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+  <!-- ANSWER TO QUESTION 1 BELOW -->
+  Semantic HTML is the practice and art of choosing HTML elements that innately convey information about themselves. Semantic HTML steps beyond primitive, functional visual structure into a nuanced development.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+  
+  <!-- ANSWER TO QUESTION 2 BELOW -->
+  `display: block;` specifies a block-level element. These elements always start on a new line and take up the full width available to them (i.e., the full width of their parent container unless otherwise specified).
+  `display: inline;` on the other hand specifies an inline element. These elements DO NOT start on a new line, and they only take up the width they need to render properly (i.e., a <span>WORD</span> would only take as much width as it took to display the text inside of it: "WORD").
 
 3. What are the 4 areas of the box model?
 
+<!-- ANSWER TO QUESTION 3 BELOW -->
+level one: content;
+level two: padding;
+level three: border;
+level four: margin;
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+<!-- ANSWER TO QUESTION 4 BELOW -->
+The `align-items` property only works on the cross axis of the flexbox. `align-items: center;` would center items along the cross axis. 
+
 5. Explain why git is valuable to a team of developers.
+
+<!-- ANSWER TO QUESTION 5 BELOW -->
+Git is a version control system that allows developers (team or no team) manage and track of all their code history. Git is valuable for developers as it allows them to create branches to pursue various tasks and implementations. The main goal of Git is to allow developers commit granular, related changes in small clusters so that——if any bugs arise after the fact——there is an option to revert back to the previous version without losing any non-related code.
+  This is of course valuable for both independent developers and teams of developers. As far as teams go, strictly speaking, Git allows for a comprehensive work flow that has the optionality to roll back if necessary. Additionally, Git allows for teams to push and pull their versions to a remote that acts as a gathering point for a team. With so many versions and changes happening every day, it would be impossible for a team to have a working version without Git to establish a common ground for work flow.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push -u origin `<firstName-lastName>`.
  
