@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,11 +49,13 @@ table {
 
 * {
     box-sizing: border-box;
+    border: 1px solid gray;
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    /* font-size: 62.5%; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,6 +72,45 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+
+header {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+header img {
+  width: 20%;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-img img {
+  /* height: 30vh; */
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+
+}
+
 
 .top-content {
     display: flex;
